@@ -1,0 +1,6 @@
+<style>body{font-family:sans-serif}code{font-family:monospace}</style><h1>ksPerPixelMultiMap_NMDetail_emissive</h1><p>This shader is an exact copy of <strong>ksPerPixelMultiMap_NMDetail</strong>, but with an extra <em>txEmissive</em> map used as multiplier for emissive color. You can use a black and white mask in there, or add color. Original shader multiplies <em>txDiffuse</em> by <em>ksEmissive</em> (similar to “Multiply” blending in Photoshop), this one also adds <em>txEmissive</em> multiplication step.</p>
+<p>Few examples:</p>
+<ul>
+<li>White <em>txDiffuse</em>, red <em>txEmissive</em>, <em>ksEmissive</em> set to <code>(1, 1, 1)</code>: red glow.</li>
+<li>Red <em>txDiffuse</em>, yellow <em>txEmissive</em>, <em>ksEmissive</em> set to <code>(1, 1, 1)</code>: red glow.</li>
+</ul>
