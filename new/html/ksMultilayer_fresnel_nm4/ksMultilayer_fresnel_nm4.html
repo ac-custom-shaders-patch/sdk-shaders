@@ -1,0 +1,3 @@
+<style>body{font-family:sans-serif}code{font-family:monospace}</style><h1>ksMultilayer_fresnel_nm4</h1><p>Shader which is very similar to <strong>ksMultilayer_fresnel_nm</strong>, but with four separate normal textures instead of single one, mapped same as detail textures, and masked with <em>txMask</em>. Good for landscapes.</p>
+<h3>Tiling fix</h3>
+<p>Unlike original multilayer shader, this one has proper options for tiling fix, separate for each channel: <em>tilingFixR</em>, <em>tilingFixG</em>, <em>tilingFixB</em> and <em>tilingFixA</em>. To enable tiling fix, change according option from <code>0</code> to <code>1</code>. Please keep in mind tiling fix requires an extra texture sample, do not use it for textures which are too high res.</p>

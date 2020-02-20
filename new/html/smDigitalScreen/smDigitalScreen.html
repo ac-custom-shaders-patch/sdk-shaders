@@ -1,8 +1,0 @@
-<style>body{font-family:sans-serif}code{font-family:monospace}</style><h1>smDigitalScreen</h1><p>Shader for digital screens, emulating either IPS or TNT matrix. As one of shaders in “sm…” series, doesn’t take lighting parameters into account. They’re there for compatibility reasons, but they don’t affect anything.</p>
-<p>Supported types:</p>
-<ul>
-<li>TNT: <code>smScreenType = 0</code>;</li>
-<li>IPS: <code>smScreenType = 1</code>.</li>
-</ul>
-<p>To get it working, set non-zero <em>ksEmissive</em> (screens should glow or they’re not functioning), adjust smScreenScale (think of it as resolution) and, in most cases, set <em>smUseTextureCoordinates</em> to 1 (although in some rare cases it might only work correctly with 0 in there).</p>
-<p>If you need a new type, please contact me. Also, in general, if you’re targeting CSP only, it would be much better to set up water using extension config and “materials_track.ini”.</p>
