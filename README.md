@@ -18,12 +18,11 @@ If you’re using old ksEditor (before AC’s 1.2.2 update, with white backgroun
 
 ## Shaders
 
-- [ksPerPixelMultiMap_emissive](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/ksPerPixelMultiMap_emissive.md): alternative to “ksPerPixelMultiMap” with extra txEmissive map working as colored mask for emissiveness; 
-- [ksPerPixelMultiMap_NMDetail_emissive](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/ksPerPixelMultiMap_NMDetail_emissive.md): alternative to “ksPerPixelMultiMap_NMDetail” with extra txEmissive map working as colored mask for emissiveness;
-- [smDigitalScreen](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/smDigitalScreen.md)¹: shader for digital screens emulating either TNT or IPS matrix;
-- [smWaterSurface](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/smWaterSurface.md)¹: shader for animated water surface of specified type.
-
-> ¹ *If you only target CSP, or could use some fallback shader for vanilla AC, please consider using extension config with “material_….ini” thing instead. In general, it’s easier to set, and, for example, if in future some improved “smWaterSurface2” would appear, those material configs would be able to switch to it without any compatibility issues by readjusting the way parameters are applied in material template (without any need to update actual car or track config).*
+- [ksPerPixelMultiMap_emissive](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/ksPerPixelMultiMap_emissive.md): alternative to “ksPerPixelMultiMap” with extra txEmissive map working as colored mask for emissiveness.
+- [ksPerPixelMultiMap_NMDetail_emissive](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/ksPerPixelMultiMap_NMDetail_emissive.md): alternative to “ksPerPixelMultiMap_NMDetail” with extra txEmissive map working as colored mask for emissiveness.
+- [ksMultilayer_fresnel_nm4](https://gitlab.com/ac-custom-shaders-patch/public/acc-shaders/blob/master/docs/ksMultilayer_fresnel_nm4.md): alternative to “ksMultilayer_fresnel” with four normal maps aligned with detail maps instead of one texture mapped to main UV. Has four separate options for fixed tiling, instead of ksEmissive trick.
+- stPerPixelMultiMap_specular: more advanced version of “ksPerPixelMultiMap” made by Stereo, with separate txSpecular texture for the color of specular, specular ambient, optionally colored reflections and better behaving txMaps allowing for wider variery of effects. Also, you can keep ambient occlusion in txMaps’ alpha channel instead.
+- stPerPixelMultiMap_specular_damage_dirt: same as previous shader, but with damages, for car paint.
 
 ## Compilation
 
